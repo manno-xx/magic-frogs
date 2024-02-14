@@ -3,7 +3,7 @@ This is a repository keeping track of in-class examples. In the end there will b
 
 ## Links
 
-- [3D implementation GitHub](https://github.com/manno-xx/Electric-Eels) 
+- [3D implementation GitHub](https://github.com/manno-xx/magic-frogs) 
 <br />Github repository with all(?) the stuff from class.
 
 - [3D Implementation Trello board](https://trello.com/invite/b/FrMp6lzs/ATTI0b8b76502af801503a262a50ea7fe72a334AB362/p3d-gtv1m) 
