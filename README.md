@@ -6,7 +6,7 @@ This is a repository keeping track of in-class examples. In the end there will b
 - [3D implementation GitHub](https://github.com/manno-xx/Electric-Eels) 
 <br />Github repository with all(?) the stuff from class.
 
-- [3D Implementation Trello board](https://trello.com/invite/b/79tZtTeq/ATTI17a76cf918cd2c36239c62f1df2cfb475D9E5C03/p3d-gtv1e) 
+- [3D Implementation Trello board](https://trello.com/invite/b/FrMp6lzs/ATTI0b8b76502af801503a262a50ea7fe72a334AB362/p3d-gtv1m) 
 <br />Trello board with class progress. Sort of one sprint per week.
 
 - [Game Development Resources, Case Studies & Articles | Unity](https://unity.com/resources?filters=game+creation).
