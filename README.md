@@ -13,7 +13,7 @@ This is a repository keeping track of in-class examples. In the end there will b
 <br />Unity's resources on programming as well as visuals. Level of the material may vary from novice to experienced:
 
 
-- [GameDevBeginner](https://gamedevbeginner.com/).
+- [GameDevBeginner](https://gamedevbeginner.com/articles/).
 <br />Unity related tutorials on variying topics, both programming and 'visuals'
 
 - [Hanze Library](https://hanze.on.worldcat.org/). 
