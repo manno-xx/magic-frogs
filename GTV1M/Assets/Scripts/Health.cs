@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Basic health class.
@@ -13,6 +14,10 @@ public class Health : MonoBehaviour
     private float CurrentHealth = 0;
     
     private float MaxHealth = 100;
+
+    public UnityEvent<float> HealthUpdate;
+
+    public UnityEvent GameOver;
     
     /// <summary>
     /// Set current health equal to max health.
@@ -20,6 +25,7 @@ public class Health : MonoBehaviour
     void Start()
     {
         CurrentHealth = MaxHealth;
+        BroadcastHealth();
     }
 
     /// <summary>
@@ -37,8 +43,22 @@ public class Health : MonoBehaviour
     private void Decrease(int amount)
     {
         CurrentHealth -= amount;
-        // Debug.Log(CurrentHealth);
+        Debug.Log(CurrentHealth);
         
-        // todo: notify 'the world' health has changed (so UI can get updated)
+        BroadcastHealth();
+    }
+
+    /// <summary>
+    /// Let all registered listeners know health stats have updated
+    /// Only of current health <= 0, the gameover event is broadcast
+    /// </summary>
+    private void BroadcastHealth()
+    {
+        HealthUpdate.Invoke(CurrentHealth / MaxHealth);
+        if (CurrentHealth <= 0)
+        {
+            // give signal on game over
+            GameOver?.Invoke();
+        }
     }
 }
