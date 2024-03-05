@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
     /// Decrease the health
     /// </summary>
     /// <param name="amount">The amount by which to decrease</param>
-    private void Decrease(int amount)
+    public void Decrease(int amount)
     {
         CurrentHealth -= amount;
         Debug.Log(CurrentHealth);

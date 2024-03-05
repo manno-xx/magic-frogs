@@ -9,7 +9,8 @@ using UnityEngine;
 /// </summary>
 public class Movement : MonoBehaviour
 {
-    [SerializeField, Range(1,10), Tooltip("Define the speed here")] private float Speed = 4;
+    [SerializeField, Range(1,10), Tooltip("Define the speed here")] 
+    private float Speed = 4;
     
     /// <summary>
     /// Read input and use it to translate (move) the transform
