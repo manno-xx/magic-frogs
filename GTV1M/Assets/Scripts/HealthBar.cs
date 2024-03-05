@@ -11,12 +11,12 @@ public class HealthBar : MonoBehaviour
 
     [SerializeField] private Gradient barColor;
     
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Initialise in Awake
+    /// </summary>
+    void Awake()
     {
         healthBar = GetComponent<Image>();
-        // TESTING
-        // UpdateHealthBar(.5f);
     }
 
     // Update is called once per frame
