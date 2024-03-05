@@ -4,7 +4,7 @@ using UnityEngine;
 /// The armor pickup
 /// Mainly a simple data object storing an amount of armor
 /// </summary>
-public class ArmorPick : MonoBehaviour
+public class ArmorPickup : MonoBehaviour
 {
     [SerializeField, Range(1, 100), Tooltip("The strenght")] private int strength;
 

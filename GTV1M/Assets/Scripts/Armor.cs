@@ -26,9 +26,9 @@ public class Armor : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<ArmorPick>( out ArmorPick armorPick))
+        if (other.TryGetComponent<ArmorPickup>( out ArmorPickup armorPickup))
         {
-            armor = armorPick.GetStrength();
+            armor = armorPickup.GetStrength();
             Destroy(other.gameObject);
         }
     }
