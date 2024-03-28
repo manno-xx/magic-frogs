@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using UnityEngine;
 
 /// <summary>
@@ -6,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class CameraState : StateMachineBehaviour
 {
-    [SerializeField] protected int CameraHalfFoV = 30;
+    protected int CameraHalfFoV = 30;
     
     // will contain the Hash (a unique ID, not the other thing) of the parameter that triggers the transitions.
     protected int CameraStateParameter;
@@ -18,6 +19,15 @@ public class CameraState : StateMachineBehaviour
         // Only type the name once (and no longer run into typo-related errors like I did in class)
         CameraStateParameter = Animator.StringToHash("CameraState");
         playerTransform = GameObject.FindWithTag("Player").transform;
+        
+        SetUpCamera(animator);
+    }
+
+    private void SetUpCamera(Animator animator)
+    {
+        Camera cctv = animator.GetComponent<Camera>();
+        CameraHalfFoV = (int) (cctv.fieldOfView * 0.5f);
+        Debug.Log(CameraHalfFoV);
     }
     
     /// <summary>
