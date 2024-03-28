@@ -32,7 +32,6 @@ public class CameraState : StateMachineBehaviour
     {
         Camera cctv = animator.GetComponent<Camera>();
         CameraHalfFoV = (int) (cctv.fieldOfView * 0.5f);
-        Debug.Log(CameraHalfFoV);
     }
     
     /// <summary>
