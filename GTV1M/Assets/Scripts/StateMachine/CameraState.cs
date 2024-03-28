@@ -22,7 +22,12 @@ public class CameraState : StateMachineBehaviour
         
         SetUpCamera(animator);
     }
-
+    
+    /// <summary>
+    /// Make sure the calculations of FoV are done based on the CCTV's camera settings.
+    /// </summary>
+    /// <param name="animator"></param>
+    /// <returns></returns>
     private void SetUpCamera(Animator animator)
     {
         Camera cctv = animator.GetComponent<Camera>();
